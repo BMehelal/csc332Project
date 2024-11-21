@@ -1,0 +1,27 @@
+List of current directory contents: 
+.breakpoints 
+.cache 
+.ccls-cache 
+.gitignore 
+.replit 
+commands.txt 
+Dir0 
+Exit.c 
+Exit.h 
+history.sh 
+List.c 
+List.h 
+main 
+main-debug 
+Makefile 
+Path.c 
+Path.h 
+path.txt 
+Picture1.png 
+replit.nix 
+replit_zip_error_log.txt 
+shell 
+Shell.c 
+Tree.c 
+Tree.h 
+tree.txt 

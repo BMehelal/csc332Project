@@ -1,0 +1,19 @@
+1.     shell*: the environment that will execute the rest of the commands. The shell won’t terminate unless the exit command gets executed.  The shell displays a different command prompt (i.e., something other than  $ and  😊).
+
+-- The shell will be replicated using the main function. The rest of the commands will be it's own functions calls.
+
+2.     tree*: this new command will create a directory and call it Dir0, and one empty directory, called Dir1, inside it.
+
+-- tree will be a function that will basically perform `mkdir Dir0`, `mkdir Dir0/Dir1`
+
+3.     list*: this new command will clear the terminal screen and print a detailed list of all content of the current directory (like ls -l) to the terminal and a file called  tree.txt after creating it.
+
+-- list will be a function that will execute `ls -l` and write the contents to a file called `tree.txt`. You'll do this by simulating pipes. bash command: `ls -l > tree.txt`
+
+4.     path*: this new command will print the current directory's path to the terminal and to a  file called  path.txt after creating it.
+
+-- path will be a function that will execute `pwd` and write the contents to a file called `path.txt`. You'll do this by simulating pipes. bash command: `pwd > path.txt`
+
+5.     exit*: this new command will print a list of the last few commands to the terminal, a detailed list of all content of the current directory (like ls -l). Finally, it will wait for the user to hit the “return” key to terminate the shell and return the control to the original shell program on your machine.
+
+-- exit will be a function call that will contain two function calls and return key to terminate program. One function will print the last few commands by executing `history | tail -n [number_of_commands]`. An example will be `history | tail -n 3`. The second function will print the contents of the directory by doing `ls -l`. In the orignal exit function 
