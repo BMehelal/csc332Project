@@ -18,22 +18,16 @@ int main(void)
     if (strcmp(input, "tree") == 0)
     {
       // if user input is tree
-      printf("The tree command has already been executed.\n");
       tree(); // executes tree command
     }
     else if (strcmp(input, "list") == 0)
     {
       // if user input is list
-      printf("The list command has already been executed.\n");
       list(); // executes tree command
     }
     else if (strcmp(input, "path") == 0)
     {
       // if user input is path
-
-      // if tree commmand has already been path
-      printf("The path command has already been executed.\n");
-
       path(); // executes tree command
     }
     else if (strcmp(input, "exit") == 0)
